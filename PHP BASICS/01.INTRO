@@ -1,0 +1,31 @@
+PHP : "HYPERTEXT PREPROCESSOR"
+OPEN SOURCE SCRIPTING LANGUAGE
+PHP FILE CAN ONTAIN TEXT,HTML,CSS,JAVASCRIPT AND PHP CODE WITH EXTENSION .php
+
+
+____________What PHP can do______________
+
+* Create,open,read,write,close and delete files on server.
+* Collect form data
+* Add ,delete and modify data in databases.
+* Can encrypt data.
+
+
+___________CASE SENSITIVITY_______________
+
+* "NOT CASE SENSITIVE"------------>IF/ELSE/WHILE/ECHO.....,CLASSES,FUNCTIONS, AND USER DEFINED FUNC.
+
+* "CASE SENSITIVE" --------------->VARIABLE NAMES
+
+
+____________COMMENTS IN PHP_______________
+
+* // This is a single-line comment
+
+* # This is also a single-line comment
+ 
+* /*
+    This is a multiple-lines comment block
+    that spans over multiple
+    lines
+ */
