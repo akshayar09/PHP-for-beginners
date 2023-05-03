@@ -5,7 +5,7 @@ EX:-
 <?php
 // PHP code is to be written here
 ?>
-
+// This tag is known as CANONICAL PHP TAGS.
 ______________________________________________________
 
 **  A PHP file usually contains HTML tags and PHP codes.
