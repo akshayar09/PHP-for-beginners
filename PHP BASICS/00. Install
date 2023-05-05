@@ -1,0 +1,32 @@
+Install AMP(APACHE,MySQL,php) software stack.
+
+1) WAMP for Windows
+2) LAMP for Linux
+3) MAMP for Mac
+4) SAMP for Solaris
+5) FAMP for FreeBSD
+6) XAMPP (Cross, Apache, MySQL, PHP, Perl) for Cross Platform: 
+           It includes some other components too such as FileZilla, OpenSSL, Webalizer, Mercury Mail, etc.
+
+
+RUN PHP CODE IN XAMPP
+***************************************
+1) Save file as .php
+   ex: Hello.php ---> file name
+       <!DOCTYPE>  
+       <html>  
+       <body>  
+       <?php  
+       echo "<h2>Hello First PHP</h2>";  
+       ?>  
+       </body>  
+       </html>  
+    Output:
+
+       Hello First PHP
+
+2) There is a "htdocs" directory in XAMPP (CHECK which folder u installed xampp.).
+3) Save php file to htdocs.
+4) Open XAMPP ----> START Apache and MySQL
+5) Open web browser and type ----->
+      localhost http://localhost/Hello.php 
