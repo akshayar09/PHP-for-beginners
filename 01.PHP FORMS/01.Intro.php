@@ -60,3 +60,5 @@ USING POST
 1) Data is invisible to others.
 2) No limit on the the amount of data to send.
 3) Not possible to bookmark page, since not displayed in URL.
+
+
