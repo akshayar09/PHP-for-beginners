@@ -79,6 +79,15 @@ EXAMPLE:--->
      ?>
 // FILTER_SANITIZE_STRING --->  Deprecated as of PHP 8.1.0, use htmlspecialchars() instead.
 
+
+<!-- 
+<?php
+$str = "<h1>Hello World!</h1>";
+$newstr = htmlspecialchars($str);
+echo $newstr;
+?> -->
+
+
 ___________________________________________________________________________________________________________________________
 VALIDATE AN INTEGER
 ********************
