@@ -77,6 +77,7 @@ Example:
     echo "Name: " . $Audi->get_name(); // output: AUDI
     echo "<br";
     echo "Color: " . $Audi->get_color();  // output: White
+?>
 
 
 
