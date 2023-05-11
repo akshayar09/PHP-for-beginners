@@ -1,4 +1,4 @@
-// A func which is passes as an args into another func.
+// A func which  passes as an args into another func.
 // An existing func can be used as callback func.
 // Pass a string cotaining name of func as the arg of another func --> to use a func as callback func.
 EXAMPLE:---> 

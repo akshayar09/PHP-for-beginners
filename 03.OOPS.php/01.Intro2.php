@@ -1,5 +1,7 @@
 CLASSES
 ***********
+// To see the contents of the class use
+     var_dump() --> display the type and value about 1 or ore variables.
 
 SYNTAX:-
  <?php
@@ -77,6 +79,7 @@ Example:
     echo "Name: " . $Audi->get_name(); // output: AUDI
     echo "<br";
     echo "Color: " . $Audi->get_color();  // output: White
+    ?>
 
 
 

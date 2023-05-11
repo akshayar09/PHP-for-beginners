@@ -3,10 +3,12 @@
 // filter_var() -----> To check an email is good to use is using this func.
 // If the mail is not in correct format or any other error, then store an error message.
 ex:
+   <?php
    $email = test_input($_POST["email"]);
    if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
     $emailErr = "Invalid email format";
    }
+   ?>
 
 
 // We could check with URL also.
@@ -21,10 +23,13 @@ PHP - VALIDATE NAME
 
 
 EX:
+<?php
+.....
  $website = test_input($_POST["name"]);
  if(!preg_match("/^[a-zA-Z-']*$/", $name)) {
    $nameErr = "Invalid name format. Only letters and whitespace allowed.";
  }
+ ?>
 
 
 PHP VALIDATE EMAIL
@@ -33,10 +38,12 @@ PHP VALIDATE EMAIL
 // If the mail is not in correct format or any other error, then store an error message.
 
 EX:
+<?php
   $email =test_input($_POST[$email]);
   if(!filter_var($email,FILTER_VALIDATE_EMAIL)) {
    $emailErr = "Invalid email format";
   }
+  ?>
 
 
 PHP - VALIDATE URL
@@ -44,10 +51,12 @@ PHP - VALIDATE URL
 // To check if the url entered is a valid url.
 // Store a msg if it is not valid.
 EX:=
+<?php
   $website = test_input($_POST["website"]);
   if(!preg_match("/\b(?:(?:https?|ftp):\/\/|www\.)[-a-z0-9+&@#\/%?+~_|!:,.;]*[-a-z0-9+&@#\/%+~_|]/i",$website)){
    $websiteErr = "Invalid URL";
   }
+  ?>
 
 
 
