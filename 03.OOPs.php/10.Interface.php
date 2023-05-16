@@ -11,7 +11,7 @@ SYNTAX:--->
 
 - An interface consist of method that have no implementaion.
 
-- Means ,all methodsof interface are abstract methods.
+- Means ,all methods of interface are abstract methods.
 
 - Interface can also includes constants.
 
@@ -88,3 +88,129 @@ EXAMPLE:---->
     
 - Enables to model multiple inheritence because a class can implement more than one interface.
 
+-EXAMPLE:----> 
+        1) First create an interface called Logger
+
+        <?php
+        interface Logger
+        {
+            public function log($message);
+        }
+         ?>
+
+
+        2) Create a fileLogger class to write log messages.
+        
+
+        <?php
+        interface Logger
+        {
+            public function log($message);
+        }
+        class fileLogger implements Logger
+        {
+            private $handle;
+
+            private $logFile;
+
+            public function __construct($filename, $mode = 'a')
+            {
+                $this->logFile=$logFile;
+                // Open log file for append
+
+                $this-> handle=fopen($filename,$mode)or die('Could not open the log file');
+            }
+            public function log($message)
+            {
+                $message=date('F j, Y, g:i a') . ':' . $message . "\n";
+                fwrite($this->handle, $message);
+            }
+            public function __destruct()
+            {
+                if ($this->handle){
+                    fclose($this->handle);
+                }
+            }
+        }
+        ?>
+
+        3) Use the fileLogger 
+
+        <?php
+        $logger =  new fileLogger("./log.txt",'w');
+        $logger->log('Php interface is shown here');
+        ?>
+
+        4) Add another logger that logs info to databse.
+
+        <?php
+        class DatabaseLogger implements Logger
+        {
+            public function log($message)
+            {
+                echo sprintf('Log %s to the database\n', $message);
+            }
+        }
+        ?>
+
+
+        5) Now here shows how to use multiple loggers at the sam etime using a single ILogger interface.
+
+        <?php
+        $loggers=[
+            new fileLogger('./log.txt'),
+            new DatabaseLogger()
+        ];
+        foreach($loggers as $logger){
+            $logger->log('Log message');
+        }
+        ?>
+        
+
+        6) The full code
+
+        <?php
+        interface Logger
+        {
+            public function log($message);
+        }
+        class FileLogger implements Logger
+        {
+            private $handle;
+
+            private $logFile;
+
+            public function __construct($filename,$mode = 'a')
+            {
+                $this->logFile=$filename;
+
+                // open log file for append
+                $this->handle =fopen($filename,$mode)or die ('could not open the log file');
+
+            }
+            public function log($message)
+            {
+                $message = date('F j,Y,g:i a') . ":" . $message . "\n";
+                fwrite($this->handle, $message);
+            }
+
+            public function __destruct()
+            {
+                if($this-> handle){
+                    fclose($this->handle);
+                }
+            }
+        }
+
+        class DatabaseLogger implements Logger
+        {
+            public function log($message)
+            {
+                echo sprintf('Log %s to the database\n', $message);
+            }
+        }
+
+        //example 1
+        $logger = new FileLogger('./log.txt','w');
+        $logger->log('PHP interface is awesome');
+        ?>
