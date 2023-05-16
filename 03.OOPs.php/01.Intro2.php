@@ -1,5 +1,5 @@
 CLASSES
-***********
+*********
 // To see the contents of the class use
      var_dump() --> display the type and value about 1 or ore variables.
 
