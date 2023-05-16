@@ -10,6 +10,10 @@
 
 - To define a class inherits from another class, use "extends" keyword.
 
+- 2 TYPES OF INHERITANCE
+    1) Single Level Inheritance---> Parent class to child class. 
+    2) Multilevel Inheritance  ---> Parent class to Child class to Subclass again.
+
 EXAMPLE---> 
          <?php
          class Dog{
