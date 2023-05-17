@@ -11,7 +11,7 @@ SYNTAX:-
  ?>
 
 
-Example:--
+Example:---
        <?php
        class Cars {
         //properties
