@@ -1,4 +1,4 @@
-* Allows to initialize an objects properties upon creation of the object.
+* Allows to initialize an objects properties upon creation of the object..
 
 * Construct func starts with 2 underscores "__"
 
