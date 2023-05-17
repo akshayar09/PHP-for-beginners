@@ -1,4 +1,4 @@
-- It means many forms..
+- It means many forms.
 
 - In OOPs plymorphism is closely related to INHERITANCE. 
 
