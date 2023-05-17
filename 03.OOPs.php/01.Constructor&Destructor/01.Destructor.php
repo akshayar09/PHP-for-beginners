@@ -1,5 +1,5 @@
-// When the object is destructed / script is stopped / exited ---> Call destructor.
-// While creating a "__destruct()" func:
+- When the object is destructed / script is stopped / exited ---> Call destructor.
+- While creating a "__destruct()" func:
                    PHP will automatically call this func at the end of the scipt.
 EXAMPLE:---> 
       <?php

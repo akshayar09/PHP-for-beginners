@@ -4,7 +4,7 @@
 // throw --> Use to throw an exception.
              Used to list the exceptions that func throws, but cant handle itself.
 // finally --> Used in place of catch block after a catch block basically it is put for cleanup activity in PHP code.
-________________________________________________________________________________________________________________________
+_______________________________________________________________________________________________________________________
 EXAMPLE:--> 
        <?php
        function divide($divident, $divisor){

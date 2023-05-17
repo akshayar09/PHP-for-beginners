@@ -1,5 +1,5 @@
 3 ACCESS MODIFIERS
-******************
+*****************
  1)public   ----> property / method can be accessed from everwhere. & its default.
  2)protected----> Can be accessed within the class and by classes derived from that class.
  3)private  ----> Only be accessed with in the class
