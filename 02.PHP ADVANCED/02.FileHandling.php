@@ -1,4 +1,4 @@
-*  CREATING / READING / UPLOADING / EDITING FILES.
+* CREATING / READING / UPLOADING / EDITING FILES.
 
 * readfile()  FUNCTION
      // Reads a file and writes it to the output buffer.
